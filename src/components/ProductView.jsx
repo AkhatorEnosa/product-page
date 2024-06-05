@@ -1,6 +1,12 @@
 import React from 'react'
 import One from '../assets/1.jpeg'
-import { IMAGES } from '../constants'
+import Two from '../assets/2.png'
+import Three from '../assets/3.jpeg'
+import Four from '../assets/4.png'
+import Five from '../assets/5.png'
+import Six from '../assets/6.png'
+import Seven from '../assets/7.jpeg'
+import Eight from '../assets/8.jpeg'
 
 export const ProductView = () => {
   return (
@@ -9,9 +15,14 @@ export const ProductView = () => {
             <div className='flex flex-col w-full gap-2'>
                <img src={One} alt="image" className='md:rounded-lg'/>
                <div className='hidden md:grid grid-cols-8 gap-2'>
-                {IMAGES.map(i => (
-                  <img src={i} alt="image" className='rounded-lg' key={i}/>
-                ))}
+                 <img src={One} alt="image" className='rounded-lg'/>
+                 <img src={Two} alt="image" className='rounded-lg'/>
+                 <img src={Three} alt="image" className='rounded-lg'/>
+                 <img src={Four} alt="image" className='rounded-lg'/>
+                 <img src={Five} alt="image" className='rounded-lg'/>
+                 <img src={Six} alt="image" className='rounded-lg'/>
+                 <img src={Seven} alt="image" className='rounded-lg'/>
+                 <img src={Eight} alt="image" className='rounded-lg'/>
                </div>
             </div>
             <div className="flex justify-center items-center">
