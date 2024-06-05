@@ -26,7 +26,7 @@ export const ProductView = () => {
                   <div className='flex flex-col md:grid grid-cols-2 gap-5'>
                     <div className='grid grid-cols-3 font-bold shadow-md rounded-md bg-slate-100 md:bg-white'>
                       <button className='text-2xl text-[#fe590c] hover:bg-slate-200 transition-all duration-100'>-</button>
-                      <input type="number" name="number" id="number" value="0" className='py-4 md:py-0 text-center border bg-slate-100 md:bg-white md:border-white'/>
+                      <input type="number" name="number" id="number" placeholder='0' className='py-4 md:py-0 text-center border bg-slate-100 md:bg-white md:border-white'/>
                       <button className='text-[18px] text-[#fe590c] hover:bg-slate-200 transition-all duration-100'>+</button>
                     </div>
                     <button className='flex gap-4 px-7 py-5 md:py-2 bg-[#FE590C] rounded-lg justify-center items-center font-bold'><span className="material-icons">shopping_cart</span>Add</button>
