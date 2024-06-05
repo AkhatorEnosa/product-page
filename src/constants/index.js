@@ -1,10 +1,10 @@
 export const IMAGES = [
-    '../assets/1.jpeg',
-    '../assets/2.png',
-    '../assets/3.jpeg',
-    '../assets/4.png',
-    '../assets/5.png',
-    '../assets/6.png',
-    '../assets/7.jpeg',
-    '../assets/8.jpeg'
+    '/src/assets/1.jpeg',
+    '/src/assets/2.png',
+    '/src/assets/3.jpeg',
+    '/src/assets/4.png',
+    '/src/assets/5.png',
+    '/src/assets/6.png',
+    '/src/assets/7.jpeg',
+    '/src/assets/8.jpeg'
   ];
