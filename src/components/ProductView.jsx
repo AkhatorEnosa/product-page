@@ -10,29 +10,30 @@ import Eight from '../assets/8.jpeg'
 
 export const ProductView = () => {
 
-  const [ pic, setPic ] = useState("");
   const [ click, setClick ] = useState(false);
-  const [ imgsrc, setImgsrc ] = useState("")
-
-  const handlePic = () => {
+  const [ imgsrc, setImgsrc ] = useState(One)
+console.log('before click =>', imgsrc)
+  const handlePic = (e) => {
     setClick(!click)
-    setImgsrc()
+    // setImgsrc()
+    setImgsrc(e.target.src);
+    console.log(imgsrc);
   }
 
   return (
       <div className=' flex md:h-full justify-center items-center lg:px-48 '>
           <div className='flex flex-col md:grid grid-cols-2 gap-5 sm:px-0 md:px-10 md:py-10'>
               <div className='flex flex-col w-full gap-2'>
-                <img src={Two} alt="image" className='md:rounded-lg'/>
+                <img src={imgsrc} alt="image" className='md:rounded-lg'/>
                 <div className='hidden md:grid grid-cols-8 gap-2'>
-                  <img src={One} alt="image" className={click ? 'rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200 active' : 'rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200'} onClick={handlePic}/>
-                  <img src={Two} alt="image" className='rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200' onClick={handlePic}/>
-                  <img src={Three} alt="image" className='rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200' onClick={handlePic}/>
-                  <img src={Four} alt="image" className='rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200' onClick={handlePic}/>
-                  <img src={Five} alt="image" className='rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200' onClick={handlePic}/>
-                  <img src={Six} alt="image" className='rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200' onClick={handlePic}/>
-                  <img src={Seven} alt="image" className='rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200' onClick={handlePic}/>
-                  <img src={Eight} alt="image" className='rounded-lg hover:border-2 hover:border-[#fe590c] transition- all duration-200' onClick={handlePic}/> 
+                  <img src={One} alt="image" className={imgsrc === One ? 'rounded-lg active' : 'rounded-lg transition-all duration-200'} onClick={handlePic}/>
+                  <img src={Two} alt="image" className='rounded-lg transition- all duration-200' onClick={handlePic}/>
+                  <img src={Three} alt="image" className='rounded-lg transition- all duration-200' onClick={handlePic}/>
+                  <img src={Four} alt="image" className='rounded-lg transition- all duration-200' onClick={handlePic}/>
+                  <img src={Five} alt="image" className='rounded-lg transition- all duration-200' onClick={handlePic}/>
+                  <img src={Six} alt="image" className='rounded-lg transition- all duration-200' onClick={handlePic}/>
+                  <img src={Seven} alt="image" className='rounded-lg transition- all duration-200' onClick={handlePic}/>
+                  <img src={Eight} alt="image" className='rounded-lg transition- all duration-200' onClick={handlePic}/> 
                 </div>
               </div>
               <div className="flex justify-center items-center">
