@@ -50,3 +50,7 @@ body {
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+.active {
+  border: 2px solid #fe590c;
+}
