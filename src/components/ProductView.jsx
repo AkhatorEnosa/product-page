@@ -38,8 +38,8 @@ export const ProductView = () => {
   return (
       <div className=' flex md:h-full justify-center items-center lg:px-48 '>
           <div className='flex flex-col md:grid grid-cols-2 gap-5 sm:px-0 md:px-10 md:py-10'>
-              <div className='flex flex-col w-full gap-2'>
-                <img src={imgsrc} alt="image" className='md:rounded-lg'/>
+              <div className='flex flex-col w-full gap-2 justify-center items-center'>
+                <img src={imgsrc} alt="image" className='md:rounded-lg md:w-[80%]'/>
                 <div className='hidden md:grid grid-cols-8 gap-2'>
                   <img src={One} alt="one" className={key === 'one' ? 'rounded-lg active transition-all duration-200' : 'rounded-lg transition-all duration-200'} onClick={handlePic}/>
                   <img src={Two} alt="two" className={key === 'two' ? 'rounded-lg active transition-all duration-200' : 'rounded-lg transition-all duration-200'} onClick={handlePic}/>
