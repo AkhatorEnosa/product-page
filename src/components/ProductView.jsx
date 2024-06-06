@@ -11,13 +11,13 @@ import Eight from '../assets/8.jpeg'
 export const ProductView = () => {
 
   const [ click, setClick ] = useState(false);
-  const [ imgsrc, setImgsrc ] = useState(One)
+  const [ imgsrc, setImgsrc ] = useState('http://localhost:5173/src/assets/1.jpeg')
 console.log('before click =>', imgsrc)
   const handlePic = (e) => {
     setClick(!click)
     // setImgsrc()
     setImgsrc(e.target.src);
-    console.log(imgsrc);
+    console.log('after click =>', imgsrc);
   }
 
   return (
